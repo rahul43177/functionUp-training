@@ -1,0 +1,1 @@
+git restore filename undoes changes in both the working directory and the staging area, while git restore --staged filename only undoes changes in the staging area.
