@@ -40,5 +40,17 @@ router.get('/test-you', function (req, res) {
     res.send('Hello there, welcome to this application!')
 });
 
+router.get('/cohorts', function(req , res) {
+    res.send(['technetium','nobelium'])
+})
+
+router.get('/students',function(req,res){
+    // here we write logic to write the logic of getting good students and then we will send this data to the web page via response (res)
+    res.send(['Rahul','Pal','Ravi'])
+})
+
+router.get('/student/:studentName',function(req,res){
+    console.log(studentName)
+})
 
 module.exports = router;
